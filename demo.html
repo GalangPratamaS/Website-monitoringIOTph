@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<title>Temperature Gauge Demo</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.tempgauge.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			if(!(/^\?noconvert/gi).test(location.search)){
+				$(".tempGauge0").tempGauge({width:140, borderWidth:2, showLabel:true, showScale : true});
+				$(".tempGauge1").tempGauge({width:40, borderWidth:3, showLabel:false});
+				$(".tempGauge2").tempGauge({width:50, borderWidth:4, borderColor:"#adadad", fillColor:"#dcdcdc", showLabel:true});
+				$(".tempGauge3").tempGauge({width:60, borderWidth:2, fillColor:"green"});
+			}
+		});
+	</script>
+</head>
+<body>
+	<div class="tempGauge0">8pH</div>
+	<div class="tempGauge0">1pH</div>
+	<div class="tempGauge1">3&deg;C</div>
+	<div class="tempGauge1">2&deg;C</div>
+	<div class="tempGauge2">8&deg;C</div>
+	<div class="tempGauge2">11&deg;C</div>
+	<div class="tempGauge3">12&deg;C</div>
+	<div class="tempGauge3">13&deg;C</div>
+	
+</body>
+</html>
